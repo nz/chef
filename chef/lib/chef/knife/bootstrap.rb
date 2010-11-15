@@ -119,7 +119,7 @@ class Chef
 
         $stdout.sync = true
 
-        Chef::Log.info("Bootstrapping Chef on #{h.color(config[:server_name], :bold)}")
+        Chef::Log.info("Bootstrapping Chef on #{h.color(server_name, :bold)}")
 
         begin
           knife_ssh.run
