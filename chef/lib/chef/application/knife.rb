@@ -29,6 +29,8 @@ require 'chef/search/query'
 require 'tmpdir'
 require 'uri'
 
+require 'net/ssh'
+
 class Chef::Application::Knife < Chef::Application
 
   NO_COMMAND_GIVEN = "You need to pass a sub-command (e.g., knife SUB-COMMAND)\n"
